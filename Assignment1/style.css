@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: radial-gradient(#111729,#141d3c,#141e3f);
+}
+
+.sidebar {
+    width: 40%;
+    padding: 1.25rem;
+    position: fixed;
+    top: 8vh;
+    left: 18.25vh;
+    bottom: 0;
+}
+
+.arrow{
+    height:1.5rem;
+    width:1.5rem;
+}
+
+.arrow:hover{
+    stroke: #0fa;
+}
+
+.duration{
+    max-width: 40%;
+    display: flex;
+    margin-top: 0.4rem;
+    color: rgb(142, 136, 136);
+}
+
+.company_details > img{
+    height:1.5rem;
+    width: 1.5rem;
+}
+
+
+.duration >p {
+    font-size: 1rem;
+}
+
+.company_details > p{
+    text-align: center;
+}
+
+a[target=Company_Url]{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+
+
+
+.Resume > div>img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: -0.1rem;
+}
+
+.project_container{
+    box-shadow: rgb(148, 37, 37);
+    border-radius: 0.4rem;
+    display: flex;
+    padding: 2rem;
+    margin-left: -2rem;
+    max-width: 100%;
+}
+
+.project_container:hover{
+    background-color: #1a2544;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.project_container:hover .company_details a{
+    color: #0fa;
+}
+
+.experience_container{
+    box-shadow: rgb(148, 37, 37);
+    border-radius: 0.4rem;
+    display: flex;
+    padding: 2rem;
+    margin-left: -2rem;
+    max-width: 100%;
+}
+
+.project_deatils{
+     max-width: 80%;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.experience_container:hover{
+    background-color: #1a2544;
+    cursor: pointer;
+    border-radius: 2rem;
+    /* color: #0fa; */
+}
+
+
+
+.project_container > .education > img{
+    height: 3rem;
+    width: 3rem;
+    margin-top: 0.6rem;
+}
+
+.container> .footer> .gihub > img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.footer{
+    margin-top: 15rem;
+    display: flex;
+    gap:1rem;
+    cursor: pointer;
+}
+
+.experience_container:hover .company_details a{
+    color: #0fa;
+}
+
+p[target=para]{
+    color: #abadb4;
+    text-align: left;
+    max-width: 90%;
+    margin-bottom: -2rem;
+}
+
+.company_details{
+    max-width: 80%;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.Resume > div> a{
+    color: white;
+    text-decoration:solid;
+}
+
+a[target="View"]:hover{
+    font-size: 1rem;
+    color: green;
+}
+
+
+.section > a{
+    margin-top: 4rem;
+}
+
+.company_details > p{
+    color: rgb(193, 183, 183);
+    text-align:inherit;
+}
+
+.tech_stack > button{
+    padding: 0.7rem;
+    margin-left: 0.2rem;
+    background-color:#1a2938;
+    font-weight: bolder;
+    border: none;
+    color:#97c4c6;
+    text-shadow:
+        0 0 92px #0fa;
+    border-radius: 2rem;
+}
+
+.sidebar h1,
+.sidebar h3,
+.sidebar p {
+    margin: 0;
+    color: whitesmoke;
+    padding: 0;
+}
+
+.sidebar p {
+    color: #66686d;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+}
+
+.sidebar h1 {
+    font-size: 2.75rem;
+}
+
+.sidebar h3 {
+    text-decoration: solid;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 4rem;
+}
+
+.sidebar ul li {
+    margin: 1.375rem 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #abadb4;
+    margin-left: 0.4rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    font-size: 1.5rem;
+}
+
+.sidebar ul li a.active {
+    font-size: 1.5rem;
+}
+
+.content {
+    margin-top:6rem;
+    margin-left: 46%;
+    margin-right: 12%;
+    padding: 1.25rem;
+}
+
+.section {
+    padding: 3.125rem 0;
+}
+
+
+.nav-line {
+    border: none;
+    border-top: 0.125rem solid white;
+    width: 1.875rem;
+    display: inline-block;
+    margin-right: 0.625rem;
+    margin-top: 1.25rem;
+    transition: width 0.3s
+}
+
+.Resume{
+    margin-top: 2rem;
+    display: flex;
+    gap:0.5rem;
+}
