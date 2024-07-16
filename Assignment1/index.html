@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
       <h1>Aakash Raturi</h1>
-      <h3>Associate Software Developer</h3>
+      <h2>Associate Software Developer</h2>
       <p>Crafts code that's so clean, it makes your IDE blush.</p>
       <ul>
         <li><hr class="nav-line" id="about-line"> <a href="#about">ABOUT</a></li>
@@ -51,7 +52,7 @@
 
     <div class="content">
       <div id="about" class="section">
-        <p target="para">I am currently an Associate Software Development Engineer at Compro Technology.I have developed proficiency in a diverse tech stack, including React, JavaScript, Firebase, Redux, and Node.js. As I Want to Switch, I am actively seeking SDE-1 roles. Additionally, I have experience as a Problem Reviewer intern at LeetCode.As I Want to Switch, I am actively seeking SDE-1 roles.As I Want to Switch, I am actively seeking SDE-1 roles.As I Want to Switch, I am actively seeking SDE-1 roles.
+        <p target="para">I am currently an Associate Software Development Engineer at Compro Technology.I have developed proficiency in a diverse tech stack, including React, JavaScript, Firebase, Redux, and Node.js. Additionally, I have experience as a Problem Reviewer intern at LeetCode.
         </p>
       </div>
       <div id="experience" class="section">
@@ -61,7 +62,7 @@
                     <h5>Feb</h5>
                     <h5>2024</h5>
                 </div>
-                <p style="margin-left: 0.2rem; margin-right: 0.2rem; margin-top:1.2rem">-</p>
+                <p  class="nav-line1"></p>
                 <div style="display: flex; gap:0.2rem">
                     <h5>May</h5>
                     <h5>2024</h5>
@@ -91,7 +92,7 @@
                     <h5>July</h5>
                     <h5>2024</h5>
                 </div>
-                <p style="margin-left: 0.2rem; margin-right: 0.2rem; margin-top: 1.2rem;">-</p>
+                <p class="nav-line1"></p>
                 <div style="display: flex; gap:0.2rem">
                     <h5>Present</h5>
                 </div>
@@ -111,7 +112,7 @@
         </div>
         <div class="Resume">
            <div>
-            <a href="https://drive.google.com/file/d/1DZ2v9x2x5VMSxcI19PnY1kLjir7UOOJa/view">View Full Resume</a>
+            <a target="resume-link" href="https://drive.google.com/file/d/1DZ2v9x2x5VMSxcI19PnY1kLjir7UOOJa/view/">View Full Resume</a>
            </div>
            <div>
             <img src="../Assignment1/Asset/Aarrow.svg"/>
@@ -148,27 +149,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('.sidebar a');
-  links.forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      const sectionId = link.getAttribute('href').substring(1);
-      document.getElementById(sectionId).scrollIntoView({
-        behavior: 'smooth'
-      });
-      links.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-      const lineId = `${sectionId}-line`;
-      const lines = document.querySelectorAll('.nav-line');
-      lines.forEach(line => line.style.width = '20px');
-      document.getElementById(lineId).style.width = '10%';
-    });
-  });
-});
-
-  </script>
+ 
 </body>
 </html>
