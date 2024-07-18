@@ -4,18 +4,23 @@ body {
     background-image: radial-gradient(#111729,#141d3c,#141e3f);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .sidebar {
-    width: 40%;
     padding: 1.25rem;
     position: fixed;
-    top: 8vh;
-    left: 18.25vh;
+    top: 0;
+    padding-left: 10rem;
+    margin-top: 5rem;
     bottom: 0;
 }
 
 .arrow{
     height:1.5rem;
     width:1.5rem;
+    margin-right: 3rem;
 }
 
 .arrow:hover{
@@ -23,17 +28,24 @@ body {
 }
 
 .duration{
-    max-width: 40%;
+    /* max-width: 40%; */
     display: flex;
     margin-top: 0.4rem;
     color: rgb(142, 136, 136);
+    margin-right: 1rem;
 }
 
-.company_details > img{
+.company_details >.project-name> img{
     height:1.5rem;
     width: 1.5rem;
 }
 
+
+.company_details> img{
+    height:1.5rem;
+    width: 1.5rem;
+    margin-right: 2rem;
+}
 
 .duration >p {
     font-size: 1rem;
@@ -49,6 +61,13 @@ a[target=Company_Url]{
     color:whitesmoke;
 }
 
+.main-body > .sidebar > .profile-info > ul{
+    margin-top: 6rem;
+}
+
+.footer{
+    margin-bottom: 2rem;
+}
 
 
 .Resume > div>img{
@@ -98,12 +117,18 @@ a[target=Company_Url]{
     /* color: #0fa; */
 }
 
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 .project_container > .education > img{
     height: 3rem;
     width: 3rem;
     margin-top: 0.6rem;
+    margin-right: 1rem;
 }
 
 .container> .footer> .gihub > img{
@@ -112,7 +137,7 @@ a[target=Company_Url]{
 }
 
 .footer{
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
     display: flex;
     gap:1rem;
     cursor: pointer;
@@ -125,13 +150,11 @@ a[target=Company_Url]{
 p[target=para]{
     color: #abadb4;
     text-align: left;
-    max-width: 90%;
-    margin-bottom: -2rem;
+    max-width: 40rem;
 }
 
 .company_details{
-    max-width: 80%;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
     margin-top: 1.2rem;
 }
 
@@ -153,6 +176,7 @@ a[target="View"]:hover{
 .company_details > p{
     color: rgb(193, 183, 183);
     text-align:inherit;
+    text-align: left;
 }
 
 .tech_stack > button{
@@ -172,6 +196,9 @@ a[target="View"]:hover{
     color: white;
 }
 
+.company_details > .tech_stack > button{
+    margin-bottom: 1rem;
+}
 
 .sidebar h1,
 .sidebar h2,
@@ -207,6 +234,10 @@ a[target="View"]:hover{
     margin-top: 4rem;
 }
 
+.position{
+    text-align: left;
+}
+
 .sidebar ul li {
     margin: 1.375rem 0;
 }
@@ -225,15 +256,14 @@ a[target="View"]:hover{
 }
 
 .content {
-    margin-top:6rem;
-    margin-left: 46%;
-    margin-right: 12%;
+    margin-top:4.6rem;
+    /* margin-left: 46%; */
+    margin-left: calc(25vw + 10rem + 5rem);
+    margin-right: 5rem;
     padding: 1.25rem;
 }
 
 .section {
-    padding: 3.125rem 0;
-    margin-top: -6rem;
     margin-bottom: 8rem;
 }
 
@@ -266,23 +296,40 @@ a[target="View"]:hover{
 }
 
 
-@media screen and (max-width: 1250px) {
-    .sidebar {
-        width: 30%;
-        left: 10%;
+@media screen and (max-width: 1200px){
+    .sidebar{
+        padding-left: 5rem;
     }
 
-    .content {
-        margin-left: 55%;
-        margin-right: 10%;
-    }
-}
-
-@media screen and (max-width:1350px){
     .content{
-        margin-left: 50%;
+        margin-left: calc(25vw+5rem+2.5rem);
+    }
+    .experience-section > .experience_container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
+
+
+
+@media screen and (max-width:1120px){
+    .sidebar  h1{
+        font-size: 2.4rem;
+    }
+    .sidebar  h2{
+        font-size: 1.3rem;
+    }
+    .sidebar p{
+        font-size: 1rem;
+    }
+    .main-body > .sidebar > .footer{
+        margin-top: 2.2rem;
+    }
+    .company_details {
+        margin-top: 0rem;
+    }
+}  
 
 @media screen and (max-width: 800px) {
     .sidebar {
@@ -293,16 +340,35 @@ a[target="View"]:hover{
         text-align: center;
     }
 
+    /* .project_container > .company_details > .project-name img{
+        display: none;
+    } */
+
+    .experience_container > .company_details > .position {
+        text-align: center;
+    }
+
+    
+    #experience{
+        width: 42rem;
+    }
+
     .content {
         margin-left: 0;
         margin-right: 0;
         padding: 1rem;
     }
 
-    .project_container,
-    .experience_container {
+    .project_container{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        /* margin-left: -1.1rem; */
+    }
+
+    .experience_container{
+        display: flex;
+        flex-direction: column;
     }
 
     .project_container > .education > img,
@@ -310,12 +376,16 @@ a[target="View"]:hover{
         margin: auto;
     }
 
+    .project_container > .education > img{
+        display: none;
+    }
+
     .company_details {
         margin-left: 0;
         text-align: center;
     }
 
-    .sidebar >ul{
+    .main-body >.sidebar >.profile-info >ul{
         display: none;
     }
 
@@ -324,10 +394,10 @@ a[target="View"]:hover{
     }
 
     p[target=para]{
-        width: 90%;
+        /* width: 85%; */
         text-align: center;
         display: flex;
-        margin-left: 1.5rem;
+        justify-content: center;
     }
     .company_details{
         margin-top: -1.4rem;
@@ -344,9 +414,24 @@ a[target="View"]:hover{
         text-align: center;
     }
 
+    .experience_container:hover .company_details{
+        margin-left: -0.7rem;
+    }
+
+    .project_container:hover{
+        margin-left: 0.2rem;
+    }
+
+    .project_container > .company_details:hover{
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .container{
-        padding: 2rem;
+        padding: 3rem;
     }
 
     .Resume{
@@ -365,7 +450,9 @@ a[target="View"]:hover{
         margin-left: 0.3rem;
         /* color: #0fa; */
     }
-    .experience_container:hover .company_details{
-        margin-left: -0.8rem;
+
+    .experience_container:hover .duration{
+        display: flex;
+        justify-content: center;
     }
 }
