@@ -45,6 +45,10 @@ body {
     width: 1.5rem;
 }
 
+.project_container>.project_details>.project-name> img{
+    height:1.5rem;
+    width: 1.5rem;
+}
 
 .company_details>.position> img{
     height:1.5rem;
@@ -57,6 +61,10 @@ body {
 
 .company_details > p{
     text-align: center;
+}
+
+.project_details>.project-name p{
+    text-align: center
 }
 
 a[target=Company_Url]{
@@ -84,9 +92,7 @@ a[target=Company_Url]{
     box-shadow: rgb(148, 37, 37);
     border-radius: 0.4rem;
     display: flex;
-    padding: 2rem;
-    margin-left: -2rem;
-    max-width: 100%;
+    padding: 2rem 2rem 2rem 0rem;
 }
 
 .project_container:hover{
@@ -98,6 +104,15 @@ a[target=Company_Url]{
 .project_container:hover .company_details a{
     color: #0fa;
 }
+
+.project_container:hover .project-name a{
+    color: #0fa;
+}
+
+.project_container:hover{
+    padding: 2rem;
+}
+
 
 .experience_container{
     box-shadow: rgb(148, 37, 37);
@@ -160,6 +175,11 @@ p[target=para]{
     margin-top: 1.2rem;
 }
 
+.project_details>.project-name{
+    margin-top: 1.2rem;
+}
+
+
 .Resume > div> a{
     color: white;
     text-decoration:solid;
@@ -180,6 +200,8 @@ a[target="View"]:hover{
     text-align:inherit;
     text-align: left;
 }
+
+
 
 .tech_stack > button{
     padding: 0.7rem;
@@ -311,6 +333,9 @@ a[target="View"]:hover{
         flex-direction: column;
         text-align: center;
     }
+    .company_details {
+        margin-top: 0rem;
+    }
 }
 
 
@@ -328,9 +353,6 @@ a[target="View"]:hover{
     .main-body > .sidebar > .footer{
         margin-top: 2.2rem;
     }
-    .company_details {
-        margin-top: 0rem;
-    }
 }  
 
 @media screen and (max-width: 800px) {
@@ -342,9 +364,10 @@ a[target="View"]:hover{
         text-align: center;
     }
 
-    /* .project_container > .company_details > .project-name img{
-        display: none;
-    } */
+    .project_details{
+       text-align: center;
+    }
+
 
     .experience_container > .company_details > .position {
         text-align: center;
@@ -404,7 +427,6 @@ a[target="View"]:hover{
     .company_details{
         margin-top: -1.4rem;
         max-width: 100%;
-        margin-left: 2.2rem;
     }
     .experience_container>.duration{
         text-align: center;
