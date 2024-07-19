@@ -28,7 +28,6 @@ body {
 }
 
 .duration{
-    /* max-width: 40%; */
     display: flex;
     margin-top: 0.4rem;
     color: rgb(142, 136, 136);
@@ -44,7 +43,12 @@ body {
 .company_details> img{
     height:1.5rem;
     width: 1.5rem;
-    margin-right: 2rem;
+}
+
+
+.company_details>.position> img{
+    height:1.5rem;
+    width: 1.5rem;
 }
 
 .duration >p {
@@ -99,9 +103,6 @@ a[target=Company_Url]{
     box-shadow: rgb(148, 37, 37);
     border-radius: 0.4rem;
     display: flex;
-    padding: 2rem;
-    margin-left: -2rem;
-    max-width: 100%;
 }
 
 .project_deatils{
@@ -114,6 +115,7 @@ a[target=Company_Url]{
     background-color: #1a2544;
     cursor: pointer;
     border-radius: 2rem;
+    padding: 1rem;
     /* color: #0fa; */
 }
 
