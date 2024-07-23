@@ -1,540 +1,531 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: radial-gradient(#111729,#141d3c,#141e3f);
-}
-
-*{
-    box-sizing: border-box;
-}
-
-.sidebar {
-    padding: 1.25rem;
-    position: fixed;
-    top: 0;
-    padding-left: 10rem;
-    margin-top: 5rem;
-    bottom: 0;
-}
-
-
-.arrow{
-    height:1.5rem;
-    width:1.5rem;
-    margin-right: 3rem;
-}
-
-.arrow:hover{
-    stroke: #0fa;
-}
-
-.duration{
-    display: flex;
-    margin-top: 0.4rem;
-    color: rgb(142, 136, 136);
-    margin-right: 1rem;
-}
-
-.company_details >.project-name> img{
-    height:1.5rem;
-    width: 1.5rem;
-}
-
-
-.company_details> img{
-    height:1.5rem;
-    width: 1.5rem;
-}
-
-.project_container>.project_details>.project-name>.arrow_inside>  img{
-    height:1.5rem;
-    width: 1.5rem;
-}
-
-.company_details>.position> img{
-    height:1.5rem;
-    width: 1.5rem;
-}
-
-.duration >p {
-    font-size: 1rem;
-}
-
-.company_details > p{
-    text-align: center;
-}
-
-.project_details>.project-name p{
-    text-align: center
-}
-
-a[target=Company_Url]{
-    text-decoration: none;
-    font-size: 1.3rem;
-    color:whitesmoke;
-}
-
-.main-body > .sidebar > .profile-info > ul{
-    margin-top: 6rem;
-}
-
-.footer{
-    margin-bottom: 2rem;
-}
-
-
-.Resume > div>img{
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-top: -0.1rem;
-}
-
-.experience_mobile, .project_mobile,.about_mobile{
-    display: none;
-}
-
-.project_container{
-    box-shadow: rgb(148, 37, 37);
-    border-radius: 0.4rem;
-    display: flex;
-    padding: 2rem 2rem 2rem 0.2rem;
-}
-
-.project_container:hover{
-    background-color: #1a2544;
-    cursor: pointer;
-    border-radius: 2rem;
-}
-
-.project_container:hover .company_details a{
-    color: #0fa;
-}
-
-.project_container:hover .project-name a{
-    color: #0fa;
-}
-
-.experience_container{
-    box-shadow: rgb(148, 37, 37);
-    border-radius: 0.4rem;
-    display: flex;
-    padding-left: 1rem;
-}
-
-
-.experience_container:hover{
-    background-color: #1a2544;
-    cursor: pointer;
-    border-radius: 2rem;
-    /* padding: 1rem; */
-    /* color: #0fa; */
-}
-
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.project_container > .education > img{
-    height: 3rem;
-    width: 3rem;
-    margin-top: 0.6rem;
-    margin-right: 1rem;
-}
-
-.container> .footer> .gihub > img{
-    height: 1rem;
-    width: 1rem;
-}
-
-.footer{
-    display: flex;
-    gap:1rem;
-    cursor: pointer;
-    font-size: 1.8rem;
-}
-
-.experience_container:hover .company_details a{
-    color: #0fa;
-}
-
-p[target=para]{
-    color: #abadb4;
-    text-align: left;
-    padding-left: 1rem;
-    padding-right: 1.4rem;
-}
-
-.company_details{
-    /* margin-left: 1.5rem; */
-    margin-top: 1.2rem;
-}
-
-.project_details>.project-name{
-    display: flex;
-    margin-top: 1.2rem;
-}
-
-
-.Resume > div> a{
-    color: white;
-    text-decoration:solid;
-}
-
-a[target="View"]:hover{
-    font-size: 1rem;
-    color: green;
-}
-
-
-.section > a{
-    margin-top: 4rem;
-}
-
-.company_details > p{
-    color: rgb(193, 183, 183);
-    text-align: left;
-    padding-right: 4rem;
-}
-
-
-
-.tech_stack > button{
-    padding: 0.7rem;
-    margin-left: 0.2rem;
-    background-color:#1a2938;
-    font-weight: bolder;
-    border: none;
-    color:#97c4c6;
-    text-shadow:
-        0 0 92px #0fa;
-    border-radius: 2rem;
-}
-
-.sidebar ul li a.active {
-    font-size: 0.6rem;
-    color: white;
-}
-
-.company_details > .tech_stack > button{
-    margin-bottom: 1rem;
-}
-
-.sidebar h1,
-.sidebar h2,
-.sidebar p {
-    margin: 0;
-    color: whitesmoke;
-    padding: 0;
-}
-
-.sidebar h2{
-    margin-top: 1rem;
-}
-
-.footer-mobile{
-    display: none;
-}
-
-.sidebar p {
-    color: #c3c7d0;
-    font-size: 1rem;
-    margin-top: 1.25rem;
-}
-
-.sidebar h1 {
-    font-size: 2.75rem;
-}
-
-.sidebar h3 {
-    text-decoration: solid;
-    font-size: 1rem;
-    margin-top: 1.25rem;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 4rem;
-}
-
-.position{
-    margin-top: 0.3rem;
-    display:flex;
-    text-align: left;
-}
-
-.sidebar ul li {
-    margin: 1.375rem 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #abadb4;
-    margin-left: 0.4rem;
-    margin-top: 10rem;
-    text-align: center;
-}
-
-.sidebar ul li a.active {
-    font-size: 1rem;
-}
-
-.content {
-    margin-top:4.6rem;
-    margin-left: calc(25vw + 10rem + 5rem);
-    margin-right: 5rem;
-    padding: 1.25rem;
-}
-
-.section {
-    margin-bottom: 12rem;
-}
-
-
-.nav-line {
-    border: none;
-    border-top: 0.125rem solid white;
-    width: 1.875rem;
-    display: inline-block;
-    margin-right: 0.625rem;
-    margin-top: 1.25rem;
-    transition: width 0.3s
-}
-
-.nav-line1 {
-    border: none;
-    border-top: 0.125rem solid #66686d;;
-    width: 1.2rem;
-    display: inline-block;
-    margin-right: 0.3rem;
-    margin-top: 1.8rem;
-    margin-left: 0.3rem;
-    transition: width 0.3s
-}
-
-.Resume{
-    margin-top: 2rem;
-    display: flex;
-    padding-left: 1rem;
-    margin-bottom: 12rem;
-}
-
-@media screen and (max-width:1284px) {
-    .company_details  p{
-        padding-right: 0rem;
-    }
-}
-
-
-@media screen and (max-width: 1200px){
-    .sidebar{
-        padding-left: 5rem;
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: radial-gradient(#111729,#141d3c,#141e3f);
     }
 
-    .content{
-        margin-left: calc(25vw+5rem+2.5rem);
+    *{
+        box-sizing: border-box;
     }
-    .experience-section > .experience_container{
+
+    .sidebar {
+        padding: 1.25rem;
+        position: fixed;
+        top: 0;
+        padding-left: 10rem;
+        margin-top: 5rem;
+        bottom: 0;
+    }
+
+
+    .arrow{
+        height:1.5rem;
+        width:1.5rem;
+        margin-right: 3rem;
+    }
+
+    .arrow:hover{
+        stroke: #0fa;
+    }
+
+    .duration{
         display: flex;
-        flex-direction: column;
-        text-align: center;
+        margin-top: 0.4rem;
+        color: rgb(142, 136, 136);
+        margin-right: 1rem;
     }
-    .company_details {
-        margin-top: 0rem;
+
+    .company_details >.project-name> img{
+        height:1.5rem;
+        width: 1.5rem;
     }
-}
 
 
+    .company_details> img{
+        height:1.5rem;
+        width: 1.5rem;
+    }
 
-@media screen and (max-width:1120px){
-    .sidebar  h1{
-        font-size: 2.4rem;
+    .project_container>.project_details>.project-name>.arrow_inside>  img{
+        height:1.5rem;
+        width: 1.5rem;
     }
-    .sidebar  h2{
-        font-size: 1.3rem;
+
+    .company_details>.position> img{
+        height:1.5rem;
+        width: 1.5rem;
     }
-    .sidebar p{
+
+    .duration >p {
         font-size: 1rem;
     }
-    .main-body > .sidebar > .footer{
-        margin-top: 2.2rem;
-    }
-    a[target=Company_Url] {
-        max-width: 10rem;
-    }
-}  
 
-@media screen and (max-width: 800px) {
-    .sidebar {
-        margin-top: 1rem;
-        padding: 1rem; 
-        position: static;
-        text-align: center;
-    }
-
-    a[target=Company_Url] {
-        max-width: 16rem;
-    }
-        
-    .project_details>.project-name{
-        display: flex;
-        justify-content: center;
-    }
-
-    .project_details{
-       text-align: center;
-    }
-
-    .about_mobile{
-        margin-top: 0;
-    }
-
-    .footer-mobile{
-        display: block;
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        padding-right: 2rem;
-        font-size: 1.5rem;
-    }
-
-
-    .experience_mobile, .project_mobile,.about_mobile{
-        display: block;
-        color: #0fa;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .experience_container > .company_details > .position {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0.5rem;
-    }
-
-    
-    #experience{
-        width: 38rem;
-    }
-
-    .section{
-        margin-bottom: 0rem;
-    }
-
-    p[target=para]{
-        margin-bottom: 2rem;
-    }
-
-    .content {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 1rem;
-    }
-
-    .project_mobile{
-        margin-top: 5rem;
-        margin-right: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .project_container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .experience_container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project_container > .education > img,
-    .experience_container > .duration {
-        margin: auto;
-    }
-
-    .project_container > .education > img{
-        display: none;
-    }
-
-
-
-    .company_details {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .main-body >.sidebar >.profile-info >ul{
-        display: none;
-    }
-
-    .footer{
-        display: none;
-    }
-
-    p[target=para]{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    .company_details{
-        margin-top: -1.4rem;
-        max-width: 100%;
-    }
-    .experience_container>.duration{
-        text-align: center;
-    }
-    .experience_container > .company_details > .tech_stack > button{
-        margin-bottom: 0.5rem;
-    }
     .company_details > p{
         text-align: center;
     }
 
-    .experience_container:hover .company_details{
-        margin-left: -0.7rem;
+    .project_details>.project-name p{
+        text-align: center
+    }
+
+    a[target=Company_Url]{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color:whitesmoke;
+    }
+
+    .main-body > .sidebar > .profile-info > ul{
+        margin-top: 6rem;
+    }
+
+    .footer{
+        margin-bottom: 2rem;
+    }
+
+
+    .Resume > div>img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .experience_mobile, .project_mobile,.about_mobile{
+        display: none;
+    }
+
+    .project_container{
+        box-shadow: rgb(148, 37, 37);
+        border-radius: 0.4rem;
+        display: flex;
+        padding: 2rem 2rem 2rem 0.2rem;
     }
 
     .project_container:hover{
-        margin-left: 0.2rem;
+        background-color: #1a2544;
+        cursor: pointer;
+        border-radius: 2rem;
     }
 
-    .project_container > .company_details:hover{
-        margin-left: 0.5rem;
-        margin-top: 0.5rem;
+    .project_container:hover .company_details a{
+        color: #0fa;
+    }
+
+    .project_container:hover .project-name a{
+        color: #0fa;
+    }
+
+    .experience_container{
+        box-shadow: rgb(148, 37, 37);
+        border-radius: 0.4rem;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-left: 1rem;
     }
 
-    .container{
-        padding: 3rem;
-    }
 
-    .Resume{
-        display: flex;
-        justify-content: center;
-    }
-
-    .education > img{
-        position: fixed;
-    }
-        
     .experience_container:hover{
         background-color: #1a2544;
         cursor: pointer;
         border-radius: 2rem;
-        margin-left: 0.3rem;
-        /* color: #0fa; */
     }
 
-    .experience_container:hover .duration{
+    .sidebar{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
-}
+
+
+    .project_container > .education > img{
+        height: 3rem;
+        width: 3rem;
+        margin-top: 0.6rem;
+        margin-right: 1rem;
+    }
+
+    .container> .footer> .gihub > img{
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .footer{
+        display: flex;
+        gap:1rem;
+        cursor: pointer;
+        font-size: 1.8rem;
+    }
+
+    .experience_container:hover .company_details a{
+        color: #0fa;
+    }
+
+    p[target=para]{
+        color: #abadb4;
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1.4rem;
+    }
+
+    .company_details{
+        margin-top: 1.2rem;
+    }
+
+    .project_details>.project-name{
+        display: flex;
+        margin-top: 1.2rem;
+    }
+
+
+    .Resume > div> a{
+        color: white;
+        text-decoration:solid;
+    }
+
+    a[target="View"]:hover{
+        font-size: 1rem;
+        color: green;
+    }
+
+
+    .section > a{
+        margin-top: 4rem;
+    }
+
+    .company_details > p{
+        color: rgb(193, 183, 183);
+        text-align: left;
+        padding-right: 4rem;
+    }
+
+
+
+    .tech_stack > button{
+        padding: 0.7rem;
+        margin-left: 0.2rem;
+        background-color:#1a2938;
+        font-weight: bolder;
+        border: none;
+        color:#97c4c6;
+        text-shadow:
+            0 0 92px #0fa;
+        border-radius: 2rem;
+    }
+
+    .sidebar ul li a.active {
+        font-size: 0.6rem;
+        color: white;
+    }
+
+    .company_details > .tech_stack > button{
+        margin-bottom: 1rem;
+    }
+
+    .sidebar h1,
+    .sidebar h2,
+    .sidebar p {
+        margin: 0;
+        color: whitesmoke;
+        padding: 0;
+    }
+
+    .sidebar h2{
+        margin-top: 1rem;
+    }
+
+    .footer-mobile{
+        display: none;
+    }
+
+    .sidebar p {
+        color: #c3c7d0;
+        font-size: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .sidebar h1 {
+        font-size: 2.75rem;
+    }
+
+    .sidebar h3 {
+        text-decoration: solid;
+        font-size: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    .position{
+        margin-top: 0.3rem;
+        display:flex;
+        text-align: left;
+    }
+
+    .sidebar ul li {
+        margin: 1.375rem 0;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #abadb4;
+        margin-left: 0.4rem;
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .sidebar ul li a.active {
+        font-size: 1rem;
+    }
+
+    .content {
+        margin-top:4.6rem;
+        margin-left: calc(25vw + 10rem + 5rem);
+        margin-right: 5rem;
+        padding: 1.25rem;
+    }
+
+    .section {
+        margin-bottom: 12rem;
+    }
+
+
+    .nav-line {
+        border: none;
+        border-top: 0.125rem solid white;
+        width: 1.875rem;
+        display: inline-block;
+        margin-right: 0.625rem;
+        margin-top: 1.25rem;
+        transition: width 0.3s
+    }
+
+    .nav-line1 {
+        border: none;
+        border-top: 0.125rem solid #66686d;;
+        width: 1.2rem;
+        display: inline-block;
+        margin-right: 0.3rem;
+        margin-top: 1.8rem;
+        margin-left: 0.3rem;
+        transition: width 0.3s
+    }
+
+    .Resume{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        margin-bottom: 12rem;
+    }
+
+    @media screen and (max-width:1284px) {
+        .company_details  p{
+            padding-right: 0rem;
+        }
+    }
+
+
+    @media screen and (max-width: 1200px){
+        .sidebar{
+            padding-left: 5rem;
+        }
+
+        .content{
+            margin-left: calc(25vw+5rem+2.5rem);
+        }
+        .experience-section > .experience_container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .company_details {
+            margin-top: 0rem;
+        }
+    }
+
+
+
+    @media screen and (max-width:1120px){
+        .sidebar  h1{
+            font-size: 2.4rem;
+        }
+        .sidebar  h2{
+            font-size: 1.3rem;
+        }
+        .sidebar p{
+            font-size: 1rem;
+        }
+        .main-body > .sidebar > .footer{
+            margin-top: 2.2rem;
+        }
+        a[target=Company_Url] {
+            max-width: 10rem;
+        }
+    }  
+
+    @media screen and (max-width: 800px) {
+        .sidebar {
+            margin-top: 1rem;
+            padding: 1rem; 
+            position: static;
+            text-align: center;
+        }
+
+        a[target=Company_Url] {
+            max-width: 16rem;
+        }
+            
+        .project_details>.project-name{
+            display: flex;
+            justify-content: center;
+        }
+
+        .project_details{
+        text-align: center;
+        }
+
+        .about_mobile{
+            margin-top: 0;
+        }
+
+        .footer-mobile{
+            display: block;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+
+        .experience_mobile, .project_mobile,.about_mobile{
+            display: block;
+            color: #0fa;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .experience_container > .company_details > .position {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0.5rem;
+        }
+
+        
+        #experience{
+            width: 38rem;
+        }
+
+        .section{
+            margin-bottom: 0rem;
+        }
+
+        p[target=para]{
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 1rem;
+        }
+
+        .project_mobile{
+            margin-top: 5rem;
+            margin-right: 0.8rem;
+            transform: translateY(3rem); 
+        }
+
+        .project_container{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        .experience_container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project_container > .education > img,
+        .experience_container > .duration {
+            margin: auto;
+        }
+
+        .project_container > .education > img{
+            display: none;
+        }
+
+
+
+        .company_details {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .main-body >.sidebar >.profile-info >ul{
+            display: none;
+        }
+
+        .footer{
+            display: none;
+        }
+
+        p[target=para]{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .company_details{
+            max-width: 100%;
+        }
+        .experience_container>.duration{
+            text-align: center;
+        }
+        .experience_container > .company_details > .tech_stack > button{
+            margin-bottom: 0.5rem;
+        }
+        .company_details > p{
+            text-align: center;
+        }
+        .project_container:hover{
+            margin-left: 0.2rem;
+        }
+
+        .project_container > .company_details:hover{
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container{
+            padding: 3rem;
+        }
+
+        .Resume{
+            display: flex;
+            justify-content: center;
+        }
+
+        .education > img{
+            position: fixed;
+        }
+            
+        .experience_container:hover{
+            background-color: #1a2544;
+            cursor: pointer;
+            border-radius: 2rem;
+            margin-left: 0.3rem;
+            /* color: #0fa; */
+        }
+
+        .experience_container:hover .duration{
+            display: flex;
+            justify-content: center;
+        }
+    }
