@@ -4,6 +4,10 @@
         background-image: radial-gradient(#111729,#141d3c,#141e3f);
     }
 
+    html{
+        scroll-behavior: smooth;
+    }
+
     *{
         box-sizing: border-box;
     }
@@ -60,9 +64,32 @@
         font-size: 1rem;
     }
 
+    .social-link{
+        color: #ffffff;
+    }
+
+    .project_container>.project_details p{
+        color: rgb(193, 183, 183);
+    }
+
+    .dates{
+        display: flex;
+        gap:0.2rem;
+    }
+
     .company_details > p{
         text-align: center;
     }
+    /* here for nav line */
+    .active {
+      font-weight: bold;
+    }
+
+    .nav-line.active {
+        width: 12%;
+    }
+
+    /*end*/
 
     .project_details>.project-name p{
         text-align: center
@@ -74,7 +101,7 @@
         color:whitesmoke;
     }
 
-    .main-body > .sidebar > .profile-info > ul{
+    .sidebar > .profile-info > ul{
         margin-top: 6rem;
     }
 
@@ -83,7 +110,7 @@
     }
 
 
-    .Resume > div>img{
+    .resume > div>img{
         height: 1.5rem;
         width: 1.5rem;
     }
@@ -174,7 +201,7 @@
     }
 
 
-    .Resume > div> a{
+    .resume > div> a{
         color: white;
         text-decoration:solid;
     }
@@ -312,12 +339,11 @@
         transition: width 0.3s
     }
 
-    .Resume{
+    .resume{
         margin-top: 2rem;
         display: flex;
         align-items: center;
         padding-left: 1rem;
-        margin-bottom: 12rem;
     }
 
     @media screen and (max-width:1284px) {
@@ -339,6 +365,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            padding-left: 0.2rem;
         }
         .company_details {
             margin-top: 0rem;
@@ -357,7 +384,7 @@
         .sidebar p{
             font-size: 1rem;
         }
-        .main-body > .sidebar > .footer{
+        .sidebar > .footer{
             margin-top: 2.2rem;
         }
         a[target=Company_Url] {
@@ -373,8 +400,16 @@
             text-align: center;
         }
 
+        .experience_container{
+            padding-left: 0rem;
+        }
+
         a[target=Company_Url] {
             max-width: 16rem;
+        }
+
+        .section{
+            margin-bottom: 6rem;
         }
             
         .project_details>.project-name{
@@ -415,11 +450,11 @@
 
         
         #experience{
-            width: 38rem;
+            width: 31rem;
         }
 
         .section{
-            margin-bottom: 0rem;
+            margin-bottom: 6rem;
         }
 
         p[target=para]{
@@ -430,6 +465,9 @@
             margin-left: 0;
             margin-right: 0;
             padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .project_mobile{
@@ -466,7 +504,7 @@
             text-align: center;
         }
 
-        .main-body >.sidebar >.profile-info >ul{
+        .sidebar >.profile-info >ul{
             display: none;
         }
 
@@ -507,7 +545,7 @@
             padding: 3rem;
         }
 
-        .Resume{
+        .resume{
             display: flex;
             justify-content: center;
         }
