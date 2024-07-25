@@ -454,7 +454,7 @@
         }
 
         .section{
-            margin-bottom: 6rem;
+            margin-bottom: 3rem;
         }
 
         p[target=para]{
@@ -522,6 +522,7 @@
         }
         .experience_container>.duration{
             text-align: center;
+            transform: translateY(1.3rem);
         }
         .experience_container > .company_details > .tech_stack > button{
             margin-bottom: 0.5rem;
@@ -543,6 +544,7 @@
 
         .container{
             padding: 3rem;
+            position: absolute;
         }
 
         .resume{
