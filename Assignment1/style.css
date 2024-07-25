@@ -81,12 +81,12 @@
         text-align: center;
     }
     /* here for nav line */
-    .active {
+    .active > a {
       font-weight: bold;
     }
 
-    .nav-line.active {
-        width: 12%;
+    .active> .nav-line{
+        width: 2rem;
     }
 
     /*end*/
@@ -236,7 +236,7 @@
         border-radius: 2rem;
     }
 
-    .sidebar ul li a.active {
+    .sidebar ul li.active a{
         font-size: 0.6rem;
         color: white;
     }
@@ -302,7 +302,7 @@
         text-align: center;
     }
 
-    .sidebar ul li a.active {
+    .sidebar ul li.active a {
         font-size: 1rem;
     }
 

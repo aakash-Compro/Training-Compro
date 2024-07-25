@@ -1,10 +1,10 @@
     document.addEventListener('DOMContentLoaded', () => {
         const links = document.querySelectorAll('.sidebar a');
         const sections = document.querySelectorAll('.section');
-        const lines = document.querySelectorAll('.nav-line');
+        const lines = document.querySelectorAll('.nav-list-items');
     
         const setActiveLinkAndLine = (id) => {
-            lines.forEach(line => line.classList.toggle('active', line.id === `${id}-line`));
+            lines.forEach(line => line.classList.toggle('active', line.id === id));
         };
     
         const initialSectionId = 'about';
