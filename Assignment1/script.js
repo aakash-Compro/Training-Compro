@@ -4,7 +4,6 @@
         const lines = document.querySelectorAll('.nav-line');
     
         const setActiveLinkAndLine = (id) => {
-            links.forEach(link => link.classList.toggle('active', link.getAttribute('href')?.substring(1) === id));
             lines.forEach(line => line.classList.toggle('active', line.id === `${id}-line`));
         };
     
